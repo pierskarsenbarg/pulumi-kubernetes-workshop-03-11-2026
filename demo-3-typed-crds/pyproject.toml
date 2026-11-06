@@ -1,0 +1,12 @@
+[project]
+name = "demo-3-typed-crds"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "pulumi>=3.0.0,<4.0.0",
+    "pulumi-gateway-networking",
+    "pulumi-kubernetes>=4.34.2",
+]
+
+[tool.uv.sources]
+pulumi-gateway-networking = { path = "sdks/gateway-networking" }

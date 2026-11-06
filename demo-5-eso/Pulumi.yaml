@@ -1,0 +1,17 @@
+name: demo-5-eso
+description: A minimal Python Pulumi program
+runtime:
+  name: python
+  options:
+    toolchain: uv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: python
+packages:
+  external-secrets:
+    source: kubernetes
+    version: 4.34.2
+    extensions:
+      - name=external-secrets
+      - crd-manifest=crd/external-secrets-v2.14.0.yaml

@@ -1,0 +1,5 @@
+environment:
+  - workshop-cluster-setup/dev-kubeconfig
+config:
+  demo-5-eso:pulumiAccessToken:
+    secure: AAABAPSErNdXKCES4r4LcGkJw3Z7xWv01F5K+C4eWYEK+jjzTyicszdfWnkV8g8LlmeD4GooYkjFl7JbyX2XzqHKrCjZ/zqNxPMLiw==

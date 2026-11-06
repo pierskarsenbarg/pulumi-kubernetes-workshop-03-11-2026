@@ -1,0 +1,23 @@
+name: demo-6-pko-stack
+description: A minimal Python Pulumi program
+runtime:
+  name: python
+  options:
+    toolchain: uv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: python
+packages:
+  flux-source:
+    source: kubernetes
+    version: 4.34.3
+    extensions:
+      - name=flux-source
+      - crd-manifest=crd/flux-source-gitrepositories-v2.9.5.yaml
+  pulumi-operator:
+    source: kubernetes
+    version: 4.34.3
+    extensions:
+      - name=pulumi-operator
+      - crd-manifest=crd/pko-stacks-v2.10.0.yaml
